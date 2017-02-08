@@ -15,6 +15,7 @@ class Search extends Component {
                         placeholder="Search for song title"
                         ref="title"
                         onChange={this.props.onChange}
+                        onKeyPress={this.props.onClick}
                         autoFocus />
                     <input className="btn btn-primary"
                         type="button"
