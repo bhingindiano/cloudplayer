@@ -1,0 +1,11 @@
+#search_box {
+    width: 300px;
+}
+
+.search_results__item {
+    padding: 10px 0;
+}
+
+.results_item__img {
+    margin-right: 10px;
+}
