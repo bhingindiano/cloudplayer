@@ -2,10 +2,40 @@
     width: 300px;
 }
 
+.search_results {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 .search_results__item {
-    padding: 10px 0;
+    padding: 10px 10px 10px 0;
+    list-style: none;
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+.search_results__item p {
+    margin: 0;
 }
 
 .results_item__img {
-    margin-right: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.results_item__duration {
+}
+
+.u-trim {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.u-display-block {
+    display: block;
 }

@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 
 class Search extends Component {
+    handleSubmit(e) {
+        e.preventDefault();
+    }
+
     render() {
         return (
             <div>
-                <form className="form-inline">
+                <form className="form-inline" onSubmit={this.handleSubmit}>
                     <input id="search_box"
                         className="form-control"
                         type="text"
