@@ -10,8 +10,7 @@ class Results extends Component {
         }
     }
 
-    play(e) {
-        let track_id = e.target.value
+    play(track_id) {
         SC.stream(`/tracks/${track_id}`).then((player) => {
             /* reverse the protocols array to use HTML5 first
                 and fallback on flash for old browsers */
@@ -46,13 +45,12 @@ class Results extends Component {
                             </small>
                             <button type="button"
                                 className="btn btn-secondary btn-sm"
-                                value={item.id}
-                                onClick={this.play.bind(this)}>
-                                <i className="fa fa-play" value={item.id}></i>
+                                onClick={() => this.play(item.id)}>
+                                <i className="fa fa-play"></i>
                             </button>
                             <button type="button"
                                 className="btn btn-secondary btn-sm"
-                                onClick={this.pause.bind(this)}>
+                                onClick={() => this.pause(item.id)}>
                                 <i className="fa fa-pause"></i>
                             </button>
                         </div>
